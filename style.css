@@ -1,0 +1,180 @@
+:root {
+    box-sizing: border-box;
+    font-size: calc(0.5em + 1vw);
+    font-family: "Poppins", sans-serif;
+}
+
+*, 
+::before, 
+::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.MenuPrincipal::before {
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    opacity: 0.8;
+    background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
+    content: "";
+}
+.MenuPrincipal {
+    height: 90vh;
+    /* The image used */
+    justify-content: center;
+    align-items: center;
+    color: #f0ecec;
+    background: url(bg.jpg);
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.MenuPrincipal>div{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.nav {
+    margin-top: 0;
+    width: 100%;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*Clear Fix*/
+.nav ul::after,
+.row::after{
+    clear: both;
+    content: " ";
+}
+
+.nav ul li {
+    display: inline-block;
+    text-align: center;
+    margin-top: 0;
+    font-size: 0.8em;  
+    float: right; 
+}
+
+.nav ul li a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    padding: 1em;
+}
+header h1 {
+    margin-top: 0;
+    line-height: 2em;
+    padding-top: 0.1em;
+    padding-left: 1.2em;
+    font-size: 1.5em; 
+    text-transform: uppercase;
+
+}
+
+.flex-cont h3{
+    margin-top: 5em;
+    font-size: 1em;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.flex-cont h2{
+    margin-top: 0.1em;
+    text-align: center;
+    font-size: 120px;
+    font-weight: 100;
+    color: #fff;
+    font-weight: 100;
+}
+.start{
+    width: 25%;
+    background-color: Transparent;
+    padding: 1em;
+    border: rgb(245, 245, 245), 1px;
+    border-radius: 20px;
+    color: #f0ecec;
+}
+.flex-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.Not1{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 1em;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.Not2{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+
+    background: url(img3.jpg);
+    height: 80vh;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.GaleriaImagenes .container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 2em;
+    padding: 90px 0 120px 40px;
+}
+.formulario{
+    background: url(img5.jpg);
+    height: 90vh;
+    width: 100%;
+    color: #f0ecec;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.formulario::before {
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    opacity: 0.8;
+    background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
+    content: "";
+}
+.formulario .container{
+    padding-top: 3em;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.formulario form{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    width: 80%;
+}
+.formulario form div{
+    color: white;
+    background-color: transparent;
+}
