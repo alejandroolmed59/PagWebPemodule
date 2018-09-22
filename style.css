@@ -22,6 +22,7 @@ span{
     background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
     content: "";
 }
+
 .MenuPrincipal {
     height: 90vh;
     /* The image used */
@@ -92,14 +93,14 @@ header h1 {
     text-align: center;
     text-transform: capitalize;
     margin-bottom: 0;
+    
 }
 .flex-cont h2{
     margin-top: 0.1em;
     text-align: center;
-    font-size: 120px;
+    font-size: 7.5em;
     font-weight: 100;
     color: #fff;
-    font-weight: 100;
 }
 .start{
     width: 25%;
@@ -108,6 +109,15 @@ header h1 {
     border: rgb(245, 245, 245), 1px;
     border-radius: 20px;
     color: #f0ecec;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+.start:hover{
+    border: none;
+    opacity: 1;
+    background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
+    content: "";
+    transition: all 0.3s ease 0s;
 }
 .flex-cont{
     display: flex;
@@ -115,20 +125,40 @@ header h1 {
     align-items: center;
     
 }
+h4{
+    line-height: 1.25em;
+    color: #222222;
+    font-size: 2em;
+    font-weight: 100;
+}
+.texto{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #777777;
+    font-size: 0.90em;
+    font-weight: 300;
+    line-height: 1.5em;
+}
 .Not1{
     height: 80vh;
-    display: grid;justify-items: center;
-    grid-template-justify-items: center;mns: 40% 40%;
-    grid-gap: 1em;justify-items: center;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 40% 40%;
+    grid-gap: 1em;
+    justify-items: center;
     align-items: center;
     margin-left: 1em;
 }
-
+.Not1 .start{
+    border: none;
+    opacity: 1;
+    background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
+    content: "";
+}
 .Not2{
     display: grid;
     grid-template-columns: 60% 40%;
     align-items: center;
-
     background: url(img3.jpg);
     height: 80vh;
     /* Create the parallax scrolling effect */
@@ -137,6 +167,11 @@ header h1 {
     background-repeat: no-repeat;
     background-size: cover;
 
+}
+.Not2 .white{
+    color: #fff;
+    font-size: .8em;
+    font-weight: 400;
 }
 .GaleriaImagenes .container{
     display: grid;
@@ -176,10 +211,19 @@ header h1 {
     justify-items: center;
     width: 80%;
 }
-.formulario form div{
+.formulario form div input{
+    padding: 1em 3em;
+    margin: 2em auto;
     color: white;
     background-color: transparent;
+    border-radius: 2rem;
 }
+.formulario form div textarea{
+    color: white;
+    background-color: transparent;
+    
+}
+
 .subscribe{
     height: 40vh;
     width: 100%;
